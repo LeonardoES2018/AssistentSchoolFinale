@@ -9,14 +9,15 @@
 <ion-content padding>
   <ion-item>
     <ion-label fixed>Usuário</ion-label>
-    <ion-input type="text" value=""></ion-input>
+    <ion-input type="text" [(ngModel)]="model.name" name="email"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label fixed>Senha</ion-label>
-    <ion-input type="password"></ion-input>
+    <ion-input type="password" name="password"></ion-input>
   </ion-item>
 
   <button ion-button full (click)="isTelaPerfil()">Entrar</button>
   <button ion-button full (click)="isTelaCadastrar()">Cadastrar-se</button>
+  <button ion-button block (click)="getUser()">CRUD de usuários</button>
 </ion-content>

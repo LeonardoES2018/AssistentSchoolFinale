@@ -25,15 +25,7 @@ export class TelaDisciplinasAlunoPage {
   }
 
   isSair(){
-    this.navCtrl.push(HomePage);
-  }
-
-  isInicial(){
-    this.navCtrl.push(TelaInicialAlunoPage);
-  }
-
-  isDisciplinas(){
-    this.navCtrl.push(TelaDisciplinasAlunoPage);
+    this.navCtrl.setRoot(HomePage);
   }
 
 }

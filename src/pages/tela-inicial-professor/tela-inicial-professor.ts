@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-<<<<<<< HEAD
-=======
 import { TelaSalasProfessorPage } from '../tela-salas-professor/tela-salas-professor';
->>>>>>> Quarto Commit
 
 /**
  * Generated class for the TelaInicialProfessorPage page.
@@ -26,11 +23,8 @@ export class TelaInicialProfessorPage {
     console.log('ionViewDidLoad TelaInicialProfessorPage');
   }
 
-<<<<<<< HEAD
-=======
   isTurma(){
-    this.navCtrl.push(TelaSalasProfessorPage);
+    this.navCtrl.setRoot(TelaSalasProfessorPage);
   }
 
->>>>>>> Quarto Commit
 }

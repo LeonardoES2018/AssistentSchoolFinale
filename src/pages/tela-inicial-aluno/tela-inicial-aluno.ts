@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
-import { TelaDisciplinasAlunoPage } from '../tela-disciplinas-aluno/tela-disciplinas-aluno';
+
 
 /**
  * Generated class for the TelaInicialAlunoPage page.
@@ -25,18 +25,7 @@ export class TelaInicialAlunoPage {
   }
 
   isSair(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
   }
-
-  isInicial(){
-    this.navCtrl.push(TelaInicialAlunoPage);
-  }
-
-
-  isDisciplinas(){
-    this.navCtrl.push(TelaDisciplinasAlunoPage);
-  }
-
-  
 
 }

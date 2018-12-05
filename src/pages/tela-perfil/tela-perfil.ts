@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TelaInicialAlunoPage } from '../tela-inicial-aluno/tela-inicial-aluno';
 import { HomePage } from '../home/home';
-import { TelaInicialProfessorPage } from '../tela-inicial-professor/tela-inicial-professor';
+import { User } from '../tela-cadastro/tela-cadastro';
 
 /**
  * Generated class for the TelaPerfilPage page.
@@ -17,6 +17,7 @@ import { TelaInicialProfessorPage } from '../tela-inicial-professor/tela-inicial
   templateUrl: 'tela-perfil.html',
 })
 export class TelaPerfilPage {
+  model:User;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -25,8 +26,6 @@ export class TelaPerfilPage {
     console.log('ionViewDidLoad TelaPerfilPage');
   }
 
-  isTelaInicial(teste){
-      var tela = teste;
   isTelaInicial(teste) {
      /* var tela = teste;
       console.log(tela);
@@ -37,14 +36,12 @@ export class TelaPerfilPage {
     }
 
     }*/
-    this.navCtrl.push(TelaInicialAlunoPage);
+    this.navCtrl.setRoot(TelaInicialAlunoPage);
   }
 
   isSair(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
   }
-
-
-
     
 }
+
